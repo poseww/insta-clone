@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    height: 100vh;
+    font-family: Istok Web;
+    background-color: white;
+    margin: 0;
+    align-items: start;
+    justify-content: center;
+}
+
+.container{
+    text-align: center;
+}
+
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links  {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: -80px;
+    transition: var(--transition);
+}
+
+.links:hover {
+    color: darkgray;
+}
+
+.mitte {
+    font-weight: bold;
+    font-family: istok web;
+    font-size: 24px;
+    justify-content: space-between;
+}
+
+
+.rechts {
+    cursor: pointer;
+    font-family: istok web;
+    text-align: center;
+    font-size: 24px;
+    margin-right: -80px;
+}
+
+.rechts:hover {
+    color: #3B5CD3;;
+}
+
+footer {
+    margin-top: 5px;
+}
+
+.dor {
+    width: 336px;
+    height: 174px;
+    color: #000;
+    text-align: start;
+    margin-inline-start: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+

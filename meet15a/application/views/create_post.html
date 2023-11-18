@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="new-post-box" style="border: none">
+        <h1>CREATE NEW POST</h1>
+        <form method="POST" action="{{ url_for('create_post') }}" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.post_pic.label(class="form-control-label") }}
+                {{ form.post_pic(class="form-control-file") }}
+                {% for error in form.post_pic.errors %}
+                    <span class="text-danger">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div class="form-group" style="display: flex; margin-left: 1px;">
+                {{ form.caption.label(class="form-control-label") }}
+                {{ form.caption(class="form-control") }}
+                {% for error in form.caption.errors %}
+                    <span class="text-danger">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+    </div>
+{% endblock content %}

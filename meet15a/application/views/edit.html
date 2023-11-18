@@ -1,0 +1,84 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.as_p }}
+        <div class="change-photo" style="margin-bottom: 20px;">
+            <img src="{{ url_for('static', filename='images/posts/3ff0a7ce3e.jpg' + current_user.profile_pic ) }}" alt="Profile Photo" style="width: 100%; height: 100%; border-radius: 200px;
+            border: 2px solid #EDE6E6;">
+            
+        </div>
+        <fieldset class="" style="border: none;">
+            
+
+            <div class="" style="margin-bottom: 30px; text-align: center;">
+                {{ form.username.label(class="") }}
+
+                {% if form.username.errors%}
+                    {{ form.username(class="") }}
+                    <div class="">
+                        {% for error in form.username.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.username(class="form-control ") }}
+                {% endif %}
+
+            </div>
+
+            <div class="" style="margin-bottom: 30px; text-align: center;">
+                {{ form.fullname.label(class="") }}
+
+                {% if form.fullname.errors%}
+                    {{ form.fullname(class="") }}
+                    <div class="">
+                        {% for error in form.fullname.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.fullname(class="form-control ") }}
+                {% endif %}
+
+            </div>
+
+            <div class="" style="margin-bottom: 30px; text-align: center;">
+                {{ form.bio.label(class="") }}
+
+                {% if form.bio.errors%}
+                    {{ form.bio(class="") }}
+                    <div class="">
+                        {% for error in form.bio.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.bio(class="form-control ") }}
+                {% endif %}
+
+            </div>
+
+            <div class="form-group" style="margin-bottom: 30px; text-align: center;">
+                {{ form.profile_pic.label(class="form-control-label") }}
+
+                {{ form.profile_pic(class="form-control-file") }}
+                {% for error in form.profile_pic.errors %}
+                    <span class="text-danger">{{ error }}</span>
+                {% endfor %}
+            </div>
+
+           
+    
+        </fieldset>
+
+        <div class="btn" style="margin-bottom: 40px; margin-left: 140px;">
+            {{ form.submit(class="btn btn-outline-info") }}
+        </div>
+        
+
+    </form>
+</div>
+{% endblock content %}

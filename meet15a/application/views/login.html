@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	<div class="">
+        <form method="POST" action="">
+			{{ form.hidden_tag() }}
+			<fieldset class="" style="border: none;">
+				<legend class="" style="text-align: center;">Hi Welcome Back!</legend>
+
+				<div class="" style="margin-bottom: 30px; text-align: center;">
+					{{ form.username.label(class="") }}
+
+					{% if form.username.errors%}
+						{{ form.username(class="") }}
+						<div class="">
+							{% for error in form.username.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+						</div>
+					{% else %}
+						{{ form.username(class=" ") }}
+					{% endif %}
+
+				</div>
+
+				<div class="" style="margin-bottom: 30px; text-align: center;">
+					{{ form.password.label(class="") }}
+
+					{% if form.password.errors%}
+						{{ form.password(class="") }}
+						<div class="">
+							{% for error in form.password.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+						</div>
+					{% else %}
+						{{ form.password(class=" ") }}
+					{% endif %}
+
+				</div>
+			</fieldset>
+			<div style="margin-left: 140px;">
+				{{ form.submit(class="btn btn-outline-info") }}
+				<small style="display: flex; margin-bottom: 5vh;">
+					<a href=" {{url_for('forgot_password')}}">Forgot Password?</a>
+				</small>
+			</div>
+			<!-- <div style="margin-left: 140px; margin-top: 5px; margin-bottom: 20px;">
+				<small>
+					<a href="#">Forgot Password?</a>
+				</small>
+			</div> -->
+			
+			<small class="go" style="margin-left: 25vh; font-size: 16px; padding: 15px 25px; background-color: rgb(168, 170, 171); color: black; text-align: center; text-decoration: none; border-radius: 5px;">Belum punya akun?<a href="{{ url_for('signup') }}">Sign Up</a></span>
+			</small>
+
+		</form>
+	</div>
+{% endblock content %}

@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    height: 100vh;
+    font-family: 'Jacques Francois Shadow', serif;
+    background-color: white;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 500px;
+    text-align: center;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #000;
+}
+
+title {
+    display: flex;
+    align-items: center;
+    font-family: 'Jacques Francois Shadow', serif;
+    font-size: 24px;
+}
+
+.divider {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.posting {
+    background-color: #fff;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+div.like > p{
+    max-width: 70vh;
+    margin-left: 20px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.qiu {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.ellipse{
+    width: 50px;
+    height: 46px;  
+    border-radius: 159px;
+    border: 5px solid #EDE6E6;
+    background: url(patrick.webp), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 2vh;
+    margin-top: 3vh;
+}
+
+.username {
+    font-weight: bold;
+    text-align: start;
+    font-family: Jomolhari;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3vh;
+}
+
+.icons {
+    width: 30px;
+    height: 34px;
+    display: flex;
+    letter-spacing: 0.50vh;
+}
+
+.likes {
+    display: flex;
+    text-align: center;
+    font-family: Jomolhari;
+    font-size: 16px;
+}
+
+/* div.post-details>.caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+} */
+
+span.username {
+    text-align: left;
+    display: flex;
+}
+
+
+.text1 {
+    font-family: Jomolhari;
+    font-size: 16px;
+    font-style: normal;
+    display: flex;
+    text-align: left;
+}
+
+.icon {
+    letter-spacing: 60px;
+    text-align: center;
+    margin-left: 3px;
+}
+
