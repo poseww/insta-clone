@@ -4,12 +4,12 @@ Instagram-clone adalah platform media sosial yang populer yang memungkinkan peng
 memberikan respons berupa "like".
 
 ## Terdapat fitur utama yaitu:
--Sign Up pengguna
--Login pengguna
--Menguploud/menggugah foto
--Edit profile
--Reset Password
--like dan unlike foto
+- Sign Up pengguna
+- Login pengguna
+- Menguploud/menggugah foto
+- Edit profile
+- Reset Password
+- like dan unlike foto
 
 ## Teknologi yang digunakan
 Proyek Instagram Clone ini dibangun dengan menggunakan sejumlah teknologi modern untuk memastikan fungsionalitas yang baik dan pengalaman pengguna yang memuaskan. Berikut adalah teknologi-teknologi utama yang digunakan:
