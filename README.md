@@ -1,9 +1,9 @@
-#instagram-clone
+## instagram-clone
 
 Instagram-clone adalah platform media sosial yang populer yang memungkinkan penggunanya untuk berbagi foto dan memungkinkan pengguna untuk 
 memberikan respons berupa "like".
 
-#Terdapat fitur utama yaitu:
+## Terdapat fitur utama yaitu:
 -Sign Up pengguna
 -Login pengguna
 -Menguploud/menggugah foto
@@ -11,7 +11,7 @@ memberikan respons berupa "like".
 -Reset Password
 -like dan unlike foto
 
-##Teknologi yang digunakan
+## Teknologi yang digunakan
 Proyek Instagram Clone ini dibangun dengan menggunakan sejumlah teknologi modern untuk memastikan fungsionalitas yang baik dan pengalaman pengguna yang memuaskan. Berikut adalah teknologi-teknologi utama yang digunakan:
 - Flask: Framework web Python yang digunakan untuk mengembangkan backend aplikasi, menangani routing, dan logika bisnis.
 - SQLAlchemy: Toolkit SQL yang digunakan untuk berinteraksi dengan basis data SQLite. Mempermudah pengelolaan dan query terhadap data dalam aplikasi.
